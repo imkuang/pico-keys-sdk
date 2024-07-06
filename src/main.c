@@ -281,6 +281,8 @@ void execute_tasks() {
 }
 
 int main(void) {
+    set_sys_clock_khz(240000, true); // overclock to 240MHz
+
 #ifndef ENABLE_EMULATION
     usb_init();
 
